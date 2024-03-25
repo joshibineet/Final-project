@@ -8,10 +8,16 @@ import sixth from "../assets/About/Image5.png";
 import seventh from "../assets/About/Image6.png";
 import eight from "../assets/About/Image7.png";
 import Leftside from "../assets/Leftside.png";
-import  fast from "../assets/logo/fast.png";
-import  easy from "../assets/logo/easy.png";
-import  legal from "../assets/logo/legal.png";
-import  affordable from "../assets/logo/affordable.png";
+import fast from "../assets/logo/fast.png";
+import easy from "../assets/logo/easy.png";
+import legal from "../assets/logo/legal.png";
+import affordable from "../assets/logo/affordable.png";
+import  Booking from "../assets/logo/Booking.png";
+import delivery from "../assets/logo/delivery.png";
+import filter from "../assets/logo/filter.png";
+import order from "../assets/logo/order.png";
+import payment from "../assets/logo/payment.png";
+import search from "../assets/logo/search.png";
 
 const About = () => {
   return (
@@ -116,7 +122,7 @@ const About = () => {
       </div>
 
       {/*........why cnex....... */}
-{/* 
+
       <div className="w-full h-auto mt-[740px] pb-[60px] bg-sky-950 flex-col justify-center items-center inline-flex">
         <div className="flex-col justify-center items-center flex">
           <div className="flex-col justify-start items-center gap-[60px] flex">
@@ -131,7 +137,7 @@ const About = () => {
             <div class="grid grid-cols-4  gap-8 pb-[60px] bg-sky-950 justify-center items-center px-24">
               <div class="bg-[#062237] rounded-lg flex flex-col justify-start items-center p-[25px] h-72">
                 <div class="text-center text-white font-medium font-['Be Vietnam Pro'] text-2xl leading-[60px]">
-                  <img src={fast} alt=""  className="ml-2"/>
+                  <img src={fast} alt="" className="ml-2" />
                   Fast
                 </div>
                 <div class="text-center text-stone-300 font-normal font-['Be Vietnam Pro'] text-base leading-6">
@@ -153,9 +159,8 @@ const About = () => {
               </div>
               <div class="bg-[#062237] rounded-lg flex flex-col justify-start items-center p-[25px] h-72">
                 <div class="text-center text-white font-medium font-['Be Vietnam Pro'] text-2xl leading-[60px]">
-                <img src={affordable} alt="" className="ml-9" />
-                Affordable
-                  
+                  <img src={affordable} alt="" className="ml-9" />
+                  Affordable
                 </div>
                 <div class="text-center text-stone-300 font-normal font-['Be Vietnam Pro'] text-base leading-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing
@@ -165,8 +170,8 @@ const About = () => {
               </div>
               <div class="bg-[#062237] rounded-lg flex flex-col justify-start items-center p-[25px] h-72">
                 <div class="text-center text-white font-normal font-['Be Vietnam Pro'] text-2xl leading-[60px]">
-                <img src={legal} alt="" className="ml-14" />
-                Legal Support
+                  <img src={legal} alt="" className="ml-14" />
+                  Legal Support
                 </div>
                 <div class="text-center text-stone-300 font-normal font-['Be Vietnam Pro'] text-base leading-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing
@@ -177,71 +182,117 @@ const About = () => {
             </div>
           </div>
         </div>
-        
-                    {/*.........Experience the difference........*/}
-      {/* <div className=" flex-col  justify-start items-center gap-[60px] inline-flex">
-    <div className="flex-col justify-start items-center gap-6 flex">
-        <div className="self-stretch justify-start items-center gap-2.5 inline-flex mt-12 ml-40">
-            <div className="w-[26px] h-[0px] border-2 border-red-400 "></div>
-            <div className="text-red-400 text-base font-normal font-['Be Vietnam Pro'] leading-normal ">FEATURE HIGHLIGHTS </div>
-        </div>
-        <div className="flex-col justify-start items-center gap-4 flex">
-            <div><span className="text-red-400 text-5xl font-medium font-['Be Vietnam Pro'] underline leading-[56px]">Experience</span><span className="text-white text-5xl font-medium font-['Be Vietnam Pro'] leading-[56px]"> the Difference</span></div>
-            <div className="text-zinc-500 text-base font-normal font-['Be Vietnam Pro'] leading-normal">Discover a World of Female-Centric Products and Services</div>
-        </div>
-    </div>
-    <div className="flex-col justify-center items-center gap-10 flex">
-        <div className="justify-center items-center gap-6 inline-flex">
-            <div className="w-[392px] p-10 bg-teal-950 rounded-lg flex-col justify-center items-center gap-[45px] inline-flex">
-                <div className="h-[120px] flex-col justify-start items-center gap-4 flex">
-                    <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">Booking Appointments</div>
-                    <div className="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
-                </div>
-            </div>
-            <div className="w-[392px] p-10 bg-teal-950 rounded-lg flex-col justify-center items-center gap-[45px] inline-flex">
-                <div className="w-10 h-10 relative"></div>
-                <div className="h-[120px] flex-col justify-start items-center gap-4 flex">
-                    <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">Ordering and Pre-ordering</div>
-                    <div className="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
-                </div>
-            </div>
-            <div className="w-[392px] p-10 bg-teal-950 rounded-lg flex-col justify-center items-center gap-[45px] inline-flex">
-                <div className="w-10 h-10 relative"></div>
-                <div className="h-[120px] flex-col justify-start items-center gap-4 flex">
-                    <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">Searching for Product</div>
-                    <div className="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
-                </div>
-            </div>
-        </div>
-        <div className="justify-center items-center gap-6 inline-flex">
-            <div className="w-[392px] p-10 bg-teal-950 rounded-lg flex-col justify-start items-center gap-[45px] inline-flex">
-                <div className="w-10 h-10 relative"></div>
-                <div className="h-[120px] flex-col justify-start items-center gap-4 flex">
-                    <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">Filtering products</div>
-                    <div className="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
-                </div>
-            </div>
-            <div className="w-[392px] p-10 bg-teal-950 rounded-lg flex-col justify-start items-center gap-[45px] inline-flex">
-                <div className="w-10 h-10 relative"></div>
-                <div className="h-[120px] flex-col justify-start items-center gap-4 flex">
-                    <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">Delivery Service</div>
-                    <div className="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
-                </div>
-            </div>
-            <div className="w-[392px] p-10 bg-teal-950 rounded-lg flex-col justify-start items-center gap-[45px] inline-flex">
-                <div className="w-10 h-10 relative"></div>
-                <div className="h-[120px] flex-col justify-start items-center gap-4 flex">
-                    <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">Payments</div>
-                    <div className="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-      </div> */} 
 
-     
+        {/*.........Experience the difference........*/}
 
+        <div className=" flex-col  justify-start items-center gap-[60px] inline-flex">
+          <div className="flex-col justify-start items-center gap-6 flex">
+            <div className="self-stretch justify-start items-center gap-2.5 inline-flex mt-12 ml-40">
+              <div className="w-[26px] h-[0px] border-2 border-red-400 "></div>
+              <div className="text-red-400 text-base font-normal font-['Be Vietnam Pro'] leading-normal ">
+                FEATURE HIGHLIGHTS{" "}
+              </div>
+            </div>
+            <div className="flex-col justify-start items-center gap-4 flex">
+              <div>
+                <span className="text-red-400 text-5xl font-medium font-['Be Vietnam Pro'] underline leading-[56px]">
+                  Experience
+                </span>
+                <span className="text-white text-5xl font-medium font-['Be Vietnam Pro'] leading-[56px]">
+                  {" "}
+                  the Difference
+                </span>
+              </div>
+              <div className="text-zinc-500 text-base font-normal font-['Be Vietnam Pro'] leading-normal">
+                Discover a World of Female-Centric Products and Services
+              </div>
+            </div>
+          </div>
+          <div className="flex  flex-wrap justify-center items-center gap-[50px]">
+            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
+              <div className="w-10 h-10 relative"></div>
+              <img src={Booking} alt="" className="mb-10" />
+
+              <div className="h-[130px] flex-col justify-start items-center gap-4 flex">
+                <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">
+                  Booking Appointments
+                </div>
+                <div class="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">
+                  Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                </div>
+              </div>
+            </div>
+            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center inline-flex">
+              <div className="w-10 h-10 relative"></div>
+              <img src={order} alt="" className="mb-10" />
+              <div className="h-[130px] flex-col justify-start items-center gap-4 flex">
+                <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">
+                  Ordering and Pre-ordering
+                </div>
+                <div className="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">
+                  Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                </div>
+              </div>
+            </div>
+            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
+              <div className="w-10 h-10 relative"></div>
+              <img src={search} alt="" className="mb-10" />
+              <div class="h-[130px] flex-col justify-start items-center gap-4 flex">
+                <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">
+                  Searching for Product
+                </div>
+                <div className="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">
+                  Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                </div>
+              </div>
+            </div>
+            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
+              <div className="w-10 h-10 relative"></div>
+              <img src={filter} alt="" className="mb-10" />
+              <div className="h-[130px] flex-col justify-start items-center gap-4 flex">
+                <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">
+                  Filtering products
+                </div>
+                <div className="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">
+                  Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                </div>
+              </div>
+            </div>
+            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
+              <div className="w-10 h-10 relative"></div>
+              <img src={delivery} alt="" className="mb-10" />
+              <div className="h-[130px] flex-col justify-start items-center gap-4 flex">
+                <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">
+                  Delivery Service
+                </div>
+                <div className="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">
+                  Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                </div>
+              </div>
+            </div>
+            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
+              <div className="w-10 h-10 relative"></div>
+              <img src={payment} alt="" className="mb-10" />
+              <div className="h-[130px] flex-col justify-start items-center gap-4 flex">
+                <div className="self-stretch text-center text-white text-2xl font-medium font-['Be Vietnam Pro'] leading-loose">
+                  Payments
+                </div>
+                <div className="self-stretch text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">
+                  Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                </div>
+              </div>
+            </div>
+             
+            
+          </div>
+        </div>
+      </div>
     </>
   );
 };
