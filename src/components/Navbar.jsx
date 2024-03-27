@@ -31,20 +31,21 @@ const Navbar = () => {
         </div>
 
         {/*For Mobile device */}
-        <ul className={!nav ? 'hidden' : " absolute text-white top-0 left-0 w-full h-96 bg-[#082D4A] flex flex-col justify-center items-center"}>
+        <ul className={!nav ? 'hidden' : " absolute text-white top-0 left-0 w-full h-96 bg-[#062237] flex flex-col justify-center items-center"}>
           <li className="py-6 text-2xl">Home</li>
           <li className="py-6 text-2xl">About us</li>
           <li className="py-6 text-2xl">FAQ</li>
           <li className="py-6 text-2xl">Contact us</li>
         </ul>
 
-        <button className="bg-[#082D4A] hover:bg-[#FF785A] text-white font-bold py-2 px-4 rounded-lg md:ml-10 ">
+        <button className="bg-[#082D4A] hover:bg-[#FF785A] text-white font-bold py-2 px-4 rounded-lg  ">
           Download Now
         </button>
 
         {/* Hamburger*/}
         <div onClick={handleClick} className="md:hidden  z-10 md:text-white mt-2 text-2xl">
-          <FaBars />
+          {!nav ? <FaBars className="cursor-pointer mr-2" /> : <FaTimes className="text-white mr-2 cursor-pointer"/>}
+
         </div>
       </nav>
     </>

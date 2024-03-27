@@ -5,6 +5,9 @@ import './index.css';
 import Navbar from './components/Navbar';
 import Section from './components/Section';
 import About from './components/About';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import FAQ from './components/Faq';
 
 // Use createRoot directly or import ReactDOM
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -13,5 +16,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Navbar />
     <Section />
     <About />
+    <FAQ />
+    <Contact />
+    <Footer />
   </React.StrictMode>
 );

@@ -43,24 +43,25 @@ const Section = () => {
           <img src={Mobile} alt="" />
         </div>
       </div>
-        <div className="absolute w-[1294px] h-[136px] px-10 py-[30px] bg-sky-950 rounded-lg shadow justify-between items-center inline-flex ml-20 top-[790px]">
-    <div className="flex-col justify-center items-center gap-3 inline-flex">
+      <div className="hidden lg:inline-flex absolute w-[1294px] h-[136px] px-10 py-[30px] bg-sky-950 rounded-lg shadow justify-between items-center ml-20 top-[790px]">
+    <div className="flex-col justify-center items-center gap-3">
         <div className="self-stretch text-center text-white text-[32px] font-semibold font-['Be Vietnam Pro'] leading-10">200+</div>
         <div className="self-stretch text-center text-white text-base font-normal font-['Be Vietnam Pro'] leading-normal">Clients Worldwide</div>
     </div>
-    <div className="w-[152px] flex-col justify-center items-center gap-3 inline-flex">
+    <div className="w-[152px] flex-col justify-center items-center gap-3">
         <div className="self-stretch text-center text-white text-[32px] font-semibold font-['Be Vietnam Pro'] leading-10">100+</div>
         <div className="self-stretch text-center text-white text-base font-normal font-['Be Vietnam Pro'] leading-normal">Client Satisfaction</div>
     </div>
-    <div className="w-[152px] flex-col justify-center items-center gap-3 inline-flex">
+    <div className="w-[152px] flex-col justify-center items-center gap-3">
         <div className="self-stretch text-center text-white text-[32px] font-semibold font-['Be Vietnam Pro'] leading-10">99K+</div>
         <div className="self-stretch text-center text-white text-base font-normal font-['Be Vietnam Pro'] leading-normal">Numbers of Sales</div>
     </div>
-    <div className="w-[152px] flex-col justify-center items-center gap-3 inline-flex">
-        <div className="text-center text-white text-[32px] font-semibold font-['Be Vietnam Pro'] ">24H</div>
+    <div className="w-[152px] flex-col justify-center items-center gap-3">
+        <div className="text-center text-white text-[32px] font-semibold font-['Be Vietnam Pro']">24H</div>
         <div className="text-center text-white text-base font-normal font-['Inter'] leading-normal">Team Support</div>
     </div>
 </div>
+
         
     </section>
   );
