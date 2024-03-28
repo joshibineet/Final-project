@@ -25,13 +25,13 @@ const About = () => {
       <div className="max-w-full sm:w-[full] sm:h-[1000px] flex-col justify-center items-center gap-10 sm:gap-[60px] mt-8 sm:mt-32 px-4 sm:px-24 sm:pr-[150px]">
         <div className="h-auto sm:h-40 flex-col justify-start items-center gap-4 sm:gap-6 flex">
           <div className="flex items-center gap-2">
-            <div className="w-3.5 sm:w-7 h-0 sm:h-0 border border-red-400"></div>
-            <div className="text-red-400 text-sm sm:text-base font-normal font-[Be Vietnam Pro] leading-tight sm:leading-normal mr-4 sm:mr-10">
+            <div className="w-3.5 sm:w-7 h-0 sm:h-0 border border-[#FF785A]"></div>
+            <div className="text-[#FF785A] text-sm sm:text-base font-normal font-[Be Vietnam Pro] leading-tight sm:leading-normal mr-4 sm:mr-10">
               ABOUT US
             </div>
           </div>
           <div className="text-center">
-            <span className="text-red-400 text-lg sm:text-5xl font-semibold font-[Be Vietnam Pro] underline leading-tight sm:leading-[56px]">
+            <span className="text-[#FF785A] text-lg sm:text-5xl font-semibold font-[Be Vietnam Pro] underline leading-tight sm:leading-[56px]">
               Pioneering Female
             </span>
             <span className="text-zinc-900 text-lg sm:text-5xl font-semibold font-[Be Vietnam Pro] leading-tight sm:leading-[56px]">
@@ -41,22 +41,22 @@ const About = () => {
         </div>
 
         {/* For large devices */}
-        <div className="hidden relative sm:flex  gap-8 mt-20">
+        <div className="hidden absolute sm:flex  gap-8 mt-20 ">
           <div className="flex flex-row sm:flex sm:flex-col sm:justify-start sm:items-start sm:gap-6">
-            <img className="w-[460px] h-[320px] rounded-2xl" src={first} />
-            <img className="w-80 h-[352px] rounded-2xl" src={second} />
+            <img className="w-80 h-[320px] rounded-2xl" src={first} />
+            <img className="w-80 h-[320px] rounded-2xl" src={second} />
           </div>
           <div className="flex flex-col justify-start items-start gap-6">
             <div className="flex justify-start items-start gap-6">
-              <img className="w-80 h-[310px] rounded-2xl" src={Third} />
-              <img className="w-80  h-[310px] rounded-2xl" src={fourth} />
+              <img className="w-80 h-[320px] rounded-2xl" src={Third} />
+              <img className="w-80  h-[320px] rounded-2xl" src={fourth} />
             </div>
-            <img className="w-[695px] h-[352px] rounded-2xl " src={fifth} />
+            <img className="w-[660px] h-[320px] rounded-2xl " src={fifth} />
           </div>
-          <div className="flex flex-col gap-6 ">
+          <div className="flex flex-col gap-[13px]  ">
             <img className="w-72 h-[212px] rounded-2xl" src={sixth} />
             <img className="w-72 h-[212px] rounded-2xl" src={seventh} />
-            <img className="w-72 h-[212px] rounded-2xl" src={eight} />
+            <img className="w-73 h-[212px] rounded-2xl" src={eight} />
           </div>
         </div>
 
@@ -115,10 +115,7 @@ const About = () => {
                 </div>
               </div>
               <div className="w-80 h-[187.73px] justify-center items-center inline-flex">
-                <img
-                  className="w-80 h-[187.73px] rounded-lg"
-                  src={fifth}
-                />
+                <img className="w-80 h-[187.73px] rounded-lg" src={fifth} />
               </div>
             </div>
           </div>
@@ -127,27 +124,35 @@ const About = () => {
 
       {/*....Our story.....*/}
 
-      <div className="absolute  sm:w-full h-20 sm:h-[738px] sm:mt-[140px] mr-10 mt-[1400px] pb-[120px] bg-white flex-col justify-center items-center inline-flex top-[450px] sm:top-[1880px] pl-12 ">
+      <div className="absolute  sm:w-full h-20 sm:h-[738px] sm:mt-[10px] pr-[10px] mt-[1400px] pb-[120px] bg-white flex-col justify-center items-center inline-flex top-[450px] sm:top-[1880px] pl-12 ">
         <div className="h-[558px] flex-col justify-center items-center flex">
           <div className="self-stretch h-[558px] flex-col justify-start items-start gap-[30px] flex">
-            <div className="self-stretch text-center hidden sm:flex justify-center ">
-              <span className="text-zinc-900 text-5xl font-medium font-[Be Vietnam Pro] leading-[56px]">
+            <div className="self-stretch text-center hidden sm:flex gap-4 justify-center ">
+              <span className="text-zinc-900 text-5xl font-semibold font-[Be Vietnam Pro] leading-[56px]">
                 Our{" "}
               </span>
-              <span className="text-red-400 text-5xl font-medium font-[Be Vietnam Pro] underline leading-[56px]">
+              <span className="text-[#FF785A] text-5xl font-semibold font-[Be Vietnam Pro] underline leading-[56px]">
                 Story
               </span>
             </div>
             <div className="self-stretch justify-start sm:items-start sm:gap-6 sm:inline-flex">
-              <div className="self-stretch flex-col justify-start items-start gap-6 inline-flex">
+              <div className="self-stretch flex-col justify-start items-start gap-6 inline-flex ml-8">
                 <img
                   className="w-[496px] grow shrink basis-0 p-2.5 hidden sm:flex rounded-2xl"
                   src={Leftside}
                 />
               </div>
               <div className="grow shrink basis-0 flex-col justify-start items-start gap-6 inline-flex mr-20 ">
-                <div className="self-stretch h-[398px] flex-col justify-start items-start gap-5 flex mt-2">
-                  <div className=" sm:h-[100px] text-zinc-900 text-base font-['Be Vietnam Pro'] leading-normal text-start  mt-44 sm:mt-0 sm:w-full w-[360px]  sm:text-left sm:tracking-wider  pl-4 sm:10 tracking-wide">
+                <div className="self-stretch h-[398px] flex-col justify-start items-start  gap-7 flex mt-2">
+                  <div class="hidden sm:flex self-stretch text-zinc-900 text-base font-semibold font-['Be Vietnam Pro']  leading-normal tracking-wider">
+                    At the beginning, it was just the two of them, working out
+                    of a small office space. They were determined to provide
+                    personalized service to their clients and build lasting
+                    relationships. They worked tirelessly, often working long
+                    hours and weekends to ensure that their clients' needs were
+                    met.
+                  </div>
+                  <div className="sm:hidden  sm:h-[100px] text-zinc-900 text-base font-['Be Vietnam Pro'] leading-normal text-start  mt-44 sm:mt-0 sm:w-full w-[360px]   sm:tracking-wider  pl-4  tracking-wide">
                     At the beginning, it was just the two of them, working out
                     of a small office space. They were determined to provide
                     personalized service to their clients and build lasting
@@ -156,20 +161,20 @@ const About = () => {
                     met.
                   </div>
 
-                  <div className="self-stretch text-zinc-900 hidden sm:flex text-base font-normal font-['Be Vietnam Pro'] leading-normal tracking-wider">
+                  <div className="self-stretch text-zinc-900 hidden sm:flex text-base font-semibold font-['Be Vietnam Pro'] leading-normal tracking-wider">
                     Their hard work paid off, and soon their business began to
                     grow. They hired additional staff members and expanded their
                     service offerings to include property management and real
                     estate investments
                   </div>
-                  <div className="self-stretch text-zinc-900 hidden sm:flex text-base font-normal font-['Be Vietnam Pro'] leading-normal tracking-wider">
+                  <div className="self-stretch text-zinc-900 hidden sm:flex text-base font-semibold font-['Be Vietnam Pro'] leading-normal tracking-wider">
                     Over the years, their business has continued to grow, and
                     they have helped countless clients buy, sell, and manage
                     their real estate investments. Today, their business is a
                     respected name in the real estate industry, known for its
                     exceptional service and commitment to its clients.
                   </div>
-                  <div className="self-stretch text-zinc-900 hidden sm:flex text-base font-normal font-['Be Vietnam Pro'] leading-normal tracking-wider">
+                  <div className="self-stretch text-zinc-900 hidden sm:flex text-base font-semibold font-['Be Vietnam Pro'] leading-normal tracking-wider">
                     As they look to the future, John and Jane remain dedicated
                     to their clients and to providing the best possible service
                     in the real estate industry. They are excited to continue to
@@ -194,14 +199,14 @@ const About = () => {
         <div className="flex-col justify-center items-center flex">
           <div className="flex-col justify-start items-center gap-[60px] flex">
             <div className="text-center mt-16">
-              <span className="text-white text-5xl font-medium font-['Be Vietnam Pro'] leading-[56px]">
+              <span className="text-white text-5xl font-semibold font-['Be Vietnam Pro'] leading-[56px]">
                 Why{" "}
               </span>
-              <span className="text-red-400 text-5xl font-medium font-['Be Vietnam Pro'] underline leading-[56px]">
+              <span className="text-[#FF785A] text-5xl font-semibold font-['Be Vietnam Pro'] underline leading-[56px]">
                 Cnex ?{" "}
               </span>
             </div>
-            <div className="grid grid-cols-4  gap-8 pb-[60px] bg-sky-950 justify-center items-center px-24">
+            <div className="grid grid-cols-4  gap-8 pb-[60px] bg-sky-950 justify-center items-center px-[90px]">
               <div className="bg-[#062237] rounded-lg flex flex-col justify-start items-center p-[25px] h-72">
                 <div className="text-center text-white font-medium font-['Be Vietnam Pro'] text-2xl leading-[60px]">
                   <img src={fast} alt="" className="ml-2" />
@@ -255,17 +260,17 @@ const About = () => {
         <div className=" flex-col  justify-start items-center gap-[60px] inline-flex">
           <div className="flex-col justify-start items-center gap-6 flex">
             <div className="self-stretch justify-start items-center gap-2.5 inline-flex mt-12 ml-40">
-              <div className="w-[26px] h-[0px] border-2 border-red-400 "></div>
-              <div className="text-red-400 text-base font-normal font-['Be Vietnam Pro'] leading-normal ">
+              <div className="w-[26px] h-[0px] border-2 border-[#FF785A] "></div>
+              <div className="text-[#FF785A] text-base font-normal font-['Be Vietnam Pro'] leading-normal ">
                 FEATURE HIGHLIGHTS{" "}
               </div>
             </div>
             <div className="flex-col justify-start items-center gap-4 flex">
               <div>
-                <span className="text-red-400 text-5xl font-medium font-['Be Vietnam Pro'] underline leading-[56px]">
+                <span className="text-[#FF785A] text-5xl font-semibold font-['Be Vietnam Pro'] underline leading-[56px]">
                   Experience
                 </span>
-                <span className="text-white text-5xl font-medium font-['Be Vietnam Pro'] leading-[56px]">
+                <span className="text-white text-5xl font-semibold font-['Be Vietnam Pro'] leading-[56px]">
                   {" "}
                   the Difference
                 </span>
@@ -275,8 +280,8 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="flex  flex-wrap justify-center items-center gap-[50px]">
-            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
+          <div className="flex  flex-wrap justify-center items-center gap-[40px]">
+            <div className="w-[420px] h-[300px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
               <div className="w-10 h-10 relative"></div>
               <img src={Booking} alt="" className="mb-10" />
 
@@ -290,7 +295,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center inline-flex">
+            <div className="w-[420px] h-[300px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center inline-flex">
               <div className="w-10 h-10 relative"></div>
               <img src={order} alt="" className="mb-10" />
               <div className="h-[130px] flex-col justify-start items-center gap-4 flex">
@@ -303,7 +308,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
+            <div className="w-[420px] h-[300px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
               <div className="w-10 h-10 relative"></div>
               <img src={search} alt="" className="mb-10" />
               <div className="h-[130px] flex-col justify-start items-center gap-4 flex">
@@ -316,7 +321,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
+            <div className="w-[420px] h-[300px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
               <div className="w-10 h-10 relative"></div>
               <img src={filter} alt="" className="mb-10" />
               <div className="h-[130px] flex-col justify-start items-center gap-4 flex">
@@ -329,7 +334,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
+            <div className="w-[420px] h-[300px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
               <div className="w-10 h-10 relative"></div>
               <img src={delivery} alt="" className="mb-10" />
               <div className="h-[130px] flex-col justify-start items-center gap-4 flex">
@@ -342,7 +347,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[392px] h-[285px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
+            <div className="w-[420px] h-[300px] p-10 bg-[#062237] rounded-lg flex-col justify-center items-center  inline-flex">
               <div className="w-10 h-10 relative"></div>
               <img src={payment} alt="" className="mb-10" />
               <div className="h-[130px] flex-col justify-start items-center gap-4 flex">

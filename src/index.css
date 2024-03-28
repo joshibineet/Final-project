@@ -14,3 +14,15 @@
         @apply cursor-pointer
     }
 }
+
+@layer utilities {
+    .nav {
+        @apply relative tracking-[1px] hover:scale-105 duration-300;
+    }
+    .nav::after {
+        @apply content-[''] bg-[#FF785A] h-[3px] w-[0%] left-0 right-0 mx-auto bottom-3 sm:-bottom-[5px] rounded-xl absolute transition-all duration-300;
+    }
+    .nav:hover::after {
+        @apply w-[70%];
+    }
+}
