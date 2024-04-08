@@ -2,11 +2,16 @@ import React from "react";
 import logo from "../assets/footerlogo.png";
 import Apple from "../assets/Apple.png";
 import Google from "../assets/Google.png";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { CiTwitter } from "react-icons/ci";
+import vrit from "../assets/vrit.png";
+
 
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-[532px] py-[120px] bg-sky-950 flex-col justify-center items-center inline-flex">
+      <div className="w-full h-[532px] py-[120px] bg-sky-950 sm:flex-col flex-col justify-center items-center sm:inline-flex">
         <div className="flex-col justify-center items-start flex">
           <div className="self-stretch h-[292px] flex-col justify-center items-start gap-10 flex">
             <div className="w-[1223px] justify-between items-start inline-flex">
@@ -29,7 +34,7 @@ const Footer = () => {
                         Sankhamul, Baneshwor
                       </div>
                       <div className="text-center text-white text-base font-normal font-['Be Vietnam Pro'] leading-normal">
-                        <span className="inline whitespace-nowrap">+977 98..........</span>
+                        <span className="inline whitespace-nowrap ">+977 9..........</span>
                       </div>
                     </div>
                     <div className="text-center text-white text-base font-normal font-['Be Vietnam Pro'] leading-normal">
@@ -39,13 +44,13 @@ const Footer = () => {
                 </div>
                 <div className="w-[169px] justify-start items-start gap-4 inline-flex">
                   <div className="w-6 h-6 relative">
-                    <div className="w-6 h-6 left-0 top-0 absolute bg-red-400 rounded-[7.09px]"></div>
+                    <div className="w-6 h-6 left-0 top-0 absolute bg-red-400 rounded-[7.09px]"><FaFacebookF className="text-white mt-1 ml-1" /></div>
                   </div>
                   <div className="w-6 h-6 relative">
-                    <div className="w-6 h-6 left-0 top-0 absolute bg-red-400 rounded-[7.09px]"></div>
+                    <div className="w-6 h-6 left-0 top-0 absolute bg-red-400 rounded-[7.09px]"><FaInstagram className="text-white mt-1 ml-1 " /></div>
                   </div>
                   <div className="w-6 h-6 relative">
-                    <div className="w-6 h-6 left-0 top-0 absolute bg-red-400 rounded-[7.09px]"></div>
+                    <div className="w-6 h-6 left-0 top-0 absolute bg-red-400 rounded-[7.09px]"><CiTwitter className="text-white mt-[2px] ml-[2px] text-[20px]" /></div>
                   </div>
                 </div>
               </div>
@@ -81,12 +86,8 @@ const Footer = () => {
             <div className="self-stretch h-11 flex-col justify-start items-start gap-6 flex">
               <div className="self-stretch h-[0px] border border-gray-300"></div>
               <div className="self-stretch justify-center items-start inline-flex">
-                <div className="text-center text-gray-300 text-sm font-normal font-['Be Vietnam Pro'] leading-tight">
-                  Copyright © 2024 Cnex. All rights reserved. Powered by: JB{" "}
-                </div>
-                <div className="w-[58.33px] h-5 relative">
-                  {/* <img className="w-[58.33px] h-5 left-0 top-0 absolute" src="https://via.placeholder.com/58x20" /> */}
-                  {/* <div className="w-[58.33px] h-5 left-0 top-0 absolute bg-gray-300">JB</div> */}
+                <div className="text-center text-gray-300 text-sm font-normal font-['Be Vietnam Pro'] leading-tight jud absolute">
+                  Copyright © 2024 Cnex. All rights reserved. Powered by: <img src={vrit} alt="" className="absolute bottom-1 ml-[365px] "   /> 
                 </div>
               </div>
             </div>

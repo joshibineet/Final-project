@@ -14,9 +14,9 @@ import Spin4 from "../assets/newspin1.png";
 const Herosection = () => {
   return (
     <Mainsection>
-      <div className="hero-container">
+      <div className="hero-container" id="home">
         <div className="banner-1">
-          <img className="hero-img" src={Banner1} alt="hero-img" />
+          <img className="hero-img" src={Banner1} alt="img" />
           <div className="text-box text-box1">
             <h1 className="font-semibold">
               <span className="text-[#FF785A]">Experience </span>the Future of Female Commerce with
@@ -40,7 +40,7 @@ const Herosection = () => {
 
         {/* img 2 */}
         <div className="banner-2">
-          <img className="hero-img" src={Banner2} alt="hero-img" />
+          <img className="hero-img h-[500px]" src={Banner2} alt="img" />
           <div className="text-box text-box2">
             <h1 className="font-semibold">
               Where<span className="bg text-[#FF785A]">Fashion </span>meets Femininity{" "}
@@ -54,7 +54,7 @@ const Herosection = () => {
         </div>
         {/* img 3 */}
         <div className="banner-3">
-          <img className="hero-img " src={Banner3} alt="hero-img" />
+          <img className="hero-img " src={Banner3} alt="img" />
           <div className="text-box text-box3">
             <h1 className="font-semibold">
               Radiate<span className="text-[#FF785A]">Confidence, </span>Radiate style{" "}
@@ -68,7 +68,7 @@ const Herosection = () => {
         </div>
         {/* img 4*/}
         <div className="banner-4">
-          <img className="hero-img" src={Banner4} alt="hero-img" />
+          <img className="hero-img" src={Banner4} alt="img" />
           <div className="text-box text-box4">
             <h1 className="font-semibold">
               <span className="text-[#FF785A]">Fashion </span>redefined.
@@ -118,12 +118,13 @@ const Herosection = () => {
 };
 
 const Mainsection = styled.section`
-  position: relative;
+  //position: relative;
   overflow: hidden;
 
   .hero-container {
     position: relative;
     height: 90vh;
+    z-index: -1;
   }
   .spin-products {
     position: relative;
@@ -143,7 +144,7 @@ const Mainsection = styled.section`
         transform: rotate(0deg);
       }
       25% {
-        transform: rotate(-10deg);
+        transform: rotate(-14deg);
       }
       35% {
         transform: rotate(-90deg);
@@ -170,7 +171,7 @@ const Mainsection = styled.section`
 
     .product1 {
       width: 500px;
-      height: 500px;
+      height: 600px;
       //margin: 10px;
       //background-color:red;
       margin-left: rem;
@@ -402,6 +403,116 @@ const Mainsection = styled.section`
   .text-box4 {
     animation-delay: 9s;
   }
+
+  @media screen and (max-width:425px){
+    .spin-products {
+    display: none;
+  }
+
+  .text-box {
+    width: 300px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    //letter-spacing: -2%;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+
+    h1 {
+      color: white;
+
+      span {
+       
+        padding-right: 1rem;
+        text-decoration: underline;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #b6b8b9;
+      margin-top: 1rem;
+    }
+  }
+
+  .playstore {
+    display: flex;
+    .playstore-1 {
+      animation: playstore 12s linear infinite;
+      transform: translateX(100px);
+    }
+
+    img {
+      width: 150px;
+      height: auto;
+      margin-top: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .hero-container {
+    position: relative;
+    height: 30vh;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  
+
+
+  .banner-1,
+  .banner-2,
+  .banner-3,
+  .banner-4 {
+    height: 30vh;
+    width: 100%;
+   // position: absolute;
+    //z-index: 1;
+    
+    object-fit:cover;
+
+
+
+    .hero-img {
+    height: auto;
+    width: 100%; //1440px;
+    //position: absolute;
+    //left: 50%;
+   // top: 50%;
+    //transform: translate(-50%, -50%);
+    //z-index: -1;
+    filter: brightness(50%);
+    overflow-x: hidden;
+    object-fit: cover;
+  }
+
+  }
+}
+
+@media screen and (max-width:1600px){
+
+  img.hero-img {
+    height: 90vh;
+    width: 100%; //1440px;
+    //position: absolute;
+    //left: 50%;
+   // top: 50%;
+    //transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: brightness(50%);
+    overflow-x: hidden;
+  }
+
+
+}
+    
+  
 `;
 
 export default Herosection;

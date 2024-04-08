@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import FAQ from './components/Faq';
 import Herosection from './components/Herosection';
 import Testimonial from './components/Testimonial.jsx';
+import Review from './components/Review.jsx';
 
 // Use createRoot directly or import ReactDOM
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
     <Navbar />
     <Herosection />
+    <Review />
     <About />
     <Testimonial />
     <FAQ />

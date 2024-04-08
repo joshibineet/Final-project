@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import Apple from "../assets/Apple.png";
 import Google from "../assets/Google.png";
 import CTA from "../assets/cta.png";
 
 const Contact = () => {
+
+  const [formValue, setFormValue] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+  const [disable, setDisable] = useState('typing');
+
+  const handleInput = (e) => {
+    const { name, value } = e.target;
+    setFormValue({ ...formValue, [name]: value });
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submit action
+    console.log(formValue); // Log the form values to the console
+    setDisable('submitted'); // Update the state to disable the form
+  }
+
   return (
     <>
       {/*.....Cta section........*/}
@@ -56,7 +77,7 @@ const Contact = () => {
 
       {/*....contact....*/}
 
-      <div className="w-[1440px] h-[861px] bg-white flex-col justify-center items-center inline-flex">
+      <div className="w-[1440px] h-[861px] bg-white flex-col justify-center items-center inline-flex" id="contact">
         <div className="h-[621px] bg-white flex-col justify-center items-center flex">
           <div className="bg-white flex-col justify-start items-center gap-[60px] flex">
             <div className="h-[136px] flex-col justify-start items-center gap-4 flex">
@@ -81,94 +102,112 @@ const Contact = () => {
               </div>
             </div>
             <div className="px-[52px] bg-white flex-col justify-start items-start gap-[60px] flex">
-              <div className="flex-col justify-start items-start gap-6 flex">
-                <div className="justify-start items-center gap-32 inline-flex">
-                  <div className="w-[392px] flex-col justify-start items-start gap-6 inline-flex">
-                    <div className="self-stretch text-black text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
-                      Name
-                    </div>
-                    <div className="flex-col justify-start items-start gap-2 flex">
-                      <div className="self-stretch text-zinc-500 text-base font-normal font-['Be_Vietnam_Pro'] leading-normal">
-                        <input
-                          type="text"
-                          className="w-[392px] border-none focus:outline-none"
-                          placeholder="Your Name"
-                        />
-                      </div>
-                      <div className="w-[392px] h-px bg-zinc-400"></div>
-                    </div>
-                  </div>
-                  <div className="w-[392px] flex-col justify-start items-start gap-6 inline-flex">
-                    <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
-                      Email
-                    </div>
-                    <div className="h-[33px] flex-col justify-start items-start gap-2 flex">
-                      <div className="self-stretch text-zinc-500 text-base font-normal font-['Be_Vietnam_Pro'] leading-normal">
-                        <input
-                          type="text"
-                          className="w-[392px] border-none focus:outline-none"
-                          placeholder="Your Email"
-                        />
-                      </div>
-                      <div className="w-[392px] h-px bg-zinc-400"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="justify-start items-center gap-32 inline-flex">
-                  <div className="w-[392px] flex-col justify-start items-start gap-6 inline-flex">
-                    <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
-                      Phone number
-                    </div>
-                    <div className="flex-col justify-start items-start gap-2 flex">
-                      <div className="self-stretch text-zinc-500 text-base font-normal font-['Be_Vietnam_Pro'] leading-normal">
-                        <input
-                          type="text"
-                          className="w-[392px] border-none focus:outline-none"
-                          placeholder="Your Phone Number"
-                        />
-                      </div>
-                      <div className="w-[392px] h-px bg-zinc-400"></div>
-                    </div>
-                  </div>
-                  <div className="w-[392px] flex-col justify-start items-start gap-6 inline-flex">
-                    <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
-                      Subject
-                    </div>
-                    <div className="flex-col justify-start items-start gap-2 flex">
-                      <div className="self-stretch text-zinc-500 text-base font-normal font-['Be_Vietnam_Pro'] leading-normal">
-                        <input
-                          type="text"
-                          className="w-[392px] border-none focus:outline-none"
-                          placeholder="service name"
-                        />
-                      </div>
-                      <div className="w-[392px] h-px bg-zinc-400"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="h-[89px] flex-col justify-start items-start gap-6 flex">
-                  <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
-                    Message
-                  </div>
-                  <div className="flex-col justify-start items-start gap-2 flex">
-                    <div className="self-stretch text-zinc-500 text-base font-normal font-['Be_Vietnam_Pro'] leading-normal">
-                      <input
-                        type="text"
-                        className="w-[392px] border-none focus:outline-none"
-                        placeholder=" Kindly explain your needed service you are interested
-                      in..."
-                      />
-                    </div>
-                    <div className="w-[912px] h-px bg-zinc-400"></div>
-                  </div>
-                </div>
-              </div>
-              <div className="px-6 py-[13px] bg-sky-950 rounded-lg justify-center items-center gap-1 inline-flex hover:bg-red-400 cursor-pointer ">
-                <div className="text-white text-base font-medium font-['Be_Vietnam_Pro'] leading-normal ">
-                  Get in touch
-                </div>
-              </div>
+      <form onSubmit={handleSubmit}>
+        <div className="flex-col justify-start items-start gap-6 flex">
+          {/* Name Input */}
+          <div className="w-[392px] flex-col justify-start items-start gap-6 inline-flex">
+            <div className="self-stretch text-black text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
+              Name
             </div>
+            <div className="flex-col justify-start items-start gap-2 flex">
+              <input
+                type="text"
+                name="name"
+                className="w-[392px] border-none focus:outline-none"
+                placeholder="Your Name"
+                value={formValue.name}
+                onChange={handleInput}
+              />
+              <div className="w-[392px] h-px bg-zinc-400"></div>
+            </div>
+          </div>
+          {/* Email Input */}
+          <div className="absolute ml-[600px] w-[392px] flex-col justify-start items-start gap-6 inline-flex">
+            <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
+              Email
+            </div>
+            <div className="h-[33px] flex-col justify-start items-start gap-2 flex">
+              <input
+                type="email"
+                name="email"
+                className="w-[392px] border-none focus:outline-none"
+                placeholder="Your Email"
+                value={formValue.email}
+                onChange={handleInput}
+              />
+              <div className="w-[392px] h-px bg-zinc-400"></div>
+            </div>
+          </div>
+          {/* Phone Number Input */}
+          <div className="w-[392px] flex-col justify-start items-start gap-6 inline-flex">
+            <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
+              Phone number
+            </div>
+            <div className="flex-col justify-start items-start gap-2 flex">
+              <input
+                type="text"
+                name="phone"
+                className="w-[392px] border-none focus:outline-none"
+                placeholder="Your Phone Number"
+                value={formValue.phone}
+                onChange={handleInput}
+              />
+              <div className="w-[392px] h-px bg-zinc-400"></div>
+            </div>
+          </div>
+          {/* Subject Input */}
+          <div className="absolute ml-[600px] mt-[129px] w-[392px] flex-col justify-start items-start gap-6 inline-flex">
+            <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
+              Subject
+            </div>
+            <div className="flex-col justify-start items-start gap-2 flex">
+              <input
+                type="text"
+                name="subject"
+                className="w-[392px] border-none focus:outline-none"
+                placeholder="Subject"
+                value={formValue.subject}
+                onChange={handleInput}
+              />
+              <div className="w-[392px] h-px bg-zinc-400"></div>
+            </div>
+          </div>
+          {/* Message Input */}
+          <div className="h-[89px] flex-col justify-start items-start gap-6 flex">
+            <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
+              Message
+            </div>
+            <div className="flex-col justify-start items-start gap-2 flex">
+              <textarea
+                name="message"
+                className="w-[780px] h-[60px] border-none focus:outline-none"
+                placeholder="Your message"
+                value={formValue.message}
+                onChange={handleInput}
+              ></textarea>
+              <div className="w-[780px] h-px bg-zinc-400"></div>
+            </div>
+          </div>
+          {/* Submit Button */}
+          <div className="px-6 py-[13px] mt-16 bg-sky-950 rounded-lg justify-center items-center gap-1 inline-flex hover:bg-[#FF785A] cursor-pointer">
+            <button
+              type="submit"
+              className="text-white text-base font-medium font-['Be_Vietnam_Pro'] leading-normal"
+              disabled={formValue.name.length === 0 ||
+                        formValue.email.length === 0 ||
+                        formValue.phone.length === 0 ||
+                        formValue.subject.length === 0 ||
+                        formValue.message.length === 0 ||
+                        disable === 'submitted'
+              }
+            >
+              Get in touch
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+           
           </div>
         </div>
       </div>
