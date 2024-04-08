@@ -49,10 +49,10 @@ const Navbar = () => {
               : " absolute text-white top-0 left-0 w-full h-96 bg-[#062237] flex flex-col justify-center items-center"
           }
         >
-          <li className="nav py-6 text-2xl">Home</li>
-          <li className="nav py-6 text-2xl">About us</li>
-          <li className="nav py-6 text-2xl">FAQ</li>
-          <li className="nav py-6 text-2xl">Contact us</li>
+          <li className="nav py-6 text-2xl"><Link to="home" smooth={true} duration={500}>Home</Link></li>
+          <li className="nav py-6 text-2xl"><Link to="about" smooth={true} duration={500}>About us</Link></li>
+          <li className="nav py-6 text-2xl"><Link to="faq" smooth={true} duration={500}>FAQ</Link></li>
+          <li className="nav py-6 text-2xl"><Link to="contact" smooth={true} duration={500}>Contact us</Link></li>
         </ul>
 
         <button

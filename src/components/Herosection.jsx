@@ -40,7 +40,7 @@ const Herosection = () => {
 
         {/* img 2 */}
         <div className="banner-2">
-          <img className="hero-img h-[500px]" src={Banner2} alt="img" />
+          <img className="hero-img" src={Banner2} alt="img" />
           <div className="text-box text-box2">
             <h1 className="font-semibold">
               Where<span className="bg text-[#FF785A]">Fashion </span>meets Femininity{" "}
@@ -171,7 +171,7 @@ const Mainsection = styled.section`
 
     .product1 {
       width: 500px;
-      height: 600px;
+      height: 500px;
       //margin: 10px;
       //background-color:red;
       margin-left: rem;

@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <>
       {/*.....Cta section........*/}
-      <div className="relative w-full h-[555px] py-[120px] mt-28 bg-black flex justify-center items-center">
+      <div className="relative sm:w-full sm:h-[555px] sm:py-[120px] sm:mt-28 mt-[320px] bg-black flex justify-center items-center">
         <img
           src={CTA}
           className="absolute top-0 left-0 h-full w-full opacity-50 z-0"
@@ -40,20 +40,20 @@ const Contact = () => {
           <div className="flex flex-col justify-start items-center gap-6">
             <div className="flex flex-col justify-start items-center gap-3.5">
               <div className="self-stretch text-center">
-                <span className="font-be-vietnam-pro text-white text-5xl font-medium leading-[56px]">
+                <span className="font-be-vietnam-pro relative text-white sm:text-5xl font-medium leading-[56px]">
                   Join the{" "}
                 </span>
                 <span
-                  className="font-be-vietnam-pro text-[#FF785A] text-5xl font-medium underline leading-[56px]"
+                  className="font-be-vietnam-pro relative text-[#FF785A] sm:text-5xl font-medium underline leading-[56px]"
                 >
                   CNEX Community
                 </span>
-                <span className="font-be-vietnam-pro text-white text-5xl font-medium leading-[56px]">
+                <span className=" relative sm:bottom-0 bottom-10 sm:left-0 left-32 font-be-vietnam-pro text-white sm:text-5xl font-medium sm:leading-[56px]">
                   {" "}
                   <br /> Today!
                 </span>
               </div>
-              <div className="w-[608px] text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">
+              <div className="sm:w-[608px] sm:flex hidden relative sm:bottom-0 bottom-10 text-center text-stone-300 text-base font-normal font-['Be Vietnam Pro'] leading-normal">
                 Download CNEX now to explore a world of female-centric products
                 and services, and empower yourself with every purchase and
                 booking.
@@ -61,12 +61,12 @@ const Contact = () => {
             </div>
             <div className="flex justify-start items-center gap-[14.28px]">
               <img
-                className="w-[171.36px] h-[50.81px]"
+                className="sm:w-[171.36px] h-[40px] sm:h-[50.81px] sm:bottom-0 bottom-8 relative"
                 src={Apple}
                 alt="Download from Apple Store"
               />
               <img
-                className="w-[171.36px] h-[50.38px]"
+                className="sm:w-[171.36px] h-[40px] sm:bottom-0 bottom-8 relative sm:h-[50.38px]"
                 src={Google}
                 alt="Download from Google Play"
               />
@@ -77,7 +77,7 @@ const Contact = () => {
 
       {/*....contact....*/}
 
-      <div className="w-[1440px] h-[861px] bg-white flex-col justify-center items-center inline-flex" id="contact">
+      <div className=" hidden w-[1440px] h-[861px] bg-white flex-col justify-center items-center  sm:inline-flex" id="contact">
         <div className="h-[621px] bg-white flex-col justify-center items-center flex">
           <div className="bg-white flex-col justify-start items-center gap-[60px] flex">
             <div className="h-[136px] flex-col justify-start items-center gap-4 flex">
@@ -101,11 +101,11 @@ const Contact = () => {
                 possible.
               </div>
             </div>
-            <div className="px-[52px] bg-white flex-col justify-start items-start gap-[60px] flex">
+            <div className="px-[50px] bg-white flex-col justify-start items-start gap-[60px] flex">
       <form onSubmit={handleSubmit}>
         <div className="flex-col justify-start items-start gap-6 flex">
           {/* Name Input */}
-          <div className="w-[392px] flex-col justify-start items-start gap-6 inline-flex">
+          <div className="relative w-[392px] right-14 flex-col justify-start items-start gap-6 inline-flex">
             <div className="self-stretch text-black text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
               Name
             </div>
@@ -122,7 +122,7 @@ const Contact = () => {
             </div>
           </div>
           {/* Email Input */}
-          <div className="absolute ml-[600px] w-[392px] flex-col justify-start items-start gap-6 inline-flex">
+          <div className="absolute ml-[540px] w-[392px] flex-col justify-start items-start gap-6 inline-flex">
             <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
               Email
             </div>
@@ -139,7 +139,7 @@ const Contact = () => {
             </div>
           </div>
           {/* Phone Number Input */}
-          <div className="w-[392px] flex-col justify-start items-start gap-6 inline-flex">
+          <div className="relative right-14 w-[392px] flex-col justify-start items-start gap-6 inline-flex">
             <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
               Phone number
             </div>
@@ -156,7 +156,7 @@ const Contact = () => {
             </div>
           </div>
           {/* Subject Input */}
-          <div className="absolute ml-[600px] mt-[129px] w-[392px] flex-col justify-start items-start gap-6 inline-flex">
+          <div className="absolute ml-[540px] mt-[129px] w-[392px] flex-col justify-start items-start gap-6 inline-flex">
             <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
               Subject
             </div>
@@ -173,7 +173,7 @@ const Contact = () => {
             </div>
           </div>
           {/* Message Input */}
-          <div className="h-[89px] flex-col justify-start items-start gap-6 flex">
+          <div className="relative right-14 h-[89px] flex-col justify-start items-start gap-6 flex">
             <div className="self-stretch text-zinc-900 text-2xl font-medium font-['Be_Vietnam_Pro'] leading-loose">
               Message
             </div>
@@ -189,7 +189,7 @@ const Contact = () => {
             </div>
           </div>
           {/* Submit Button */}
-          <div className="px-6 py-[13px] mt-16 bg-sky-950 rounded-lg justify-center items-center gap-1 inline-flex hover:bg-[#FF785A] cursor-pointer">
+          <div className="px-6 py-[13px] right-14 relative mt-16 bg-sky-950 rounded-lg justify-center items-center gap-1 inline-flex hover:bg-[#FF785A] cursor-pointer">
             <button
               type="submit"
               className="text-white text-base font-medium font-['Be_Vietnam_Pro'] leading-normal"

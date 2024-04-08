@@ -67,19 +67,19 @@ const Testimonial = () => {
 
             <div className="faq">
       <div className="testimonial">
-        <div className="bg-red-400 w-8 h-[2px] mt-[10px]"> </div>
+        <div className="bg-red-400 relative sm:right-0 right-9 top-3 w-8 h-[2px] sm:mt-[10px]"> </div>
         <p className="about_us text-red-400 font-medium ml-2">TESTIMONIAL</p>
       </div>
       <div className="what_our">
         <p className="customer_say  text-5xl">
          <span className="font-semibold"> What our</span>&nbsp;<span className="cnex_color font-semibold text-red-400">Customers say</span>
         </p>
-        <div className="left_right">
-          <button className="left_button" onClick={handleLeftButtonClick}>
-            <FaArrowLeft alt="left arrow" className="ml-3" />
+        <div className="left_right sm:mt-0 mt-3">
+          <button className="left_button sm:left-0 left-[180px] relative" onClick={handleLeftButtonClick}>
+            <FaArrowLeft alt="left arrow" className="sm:ml-3 ml-2" />
           </button>
-          <button className="right_button" onClick={handleRightButtonClick}>
-            <FaArrowRight alt="right arrow" className="ml-3" />
+          <button className="right_button relative sm:left-0 left-[90px]" onClick={handleRightButtonClick}>
+            <FaArrowRight alt="right arrow" className="sm:ml-3 ml-2" />
           </button>
         </div>
       </div>
